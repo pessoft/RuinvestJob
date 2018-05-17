@@ -1,5 +1,7 @@
-﻿using System;
+﻿using RuinvestUtils.Jobs;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,7 +19,27 @@ namespace RuinvestJob
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new Form1());
+            VkAmountMoneyScheduler.Start();
+            QiwiSenderMoneyScheduler.Start();
+
+            var form = new RuinvestJob();
+            using (NotifyIcon icon = new NotifyIcon())
+            {
+                icon.Icon = Icon.ExtractAssociatedIcon("title-ico.ico");
+                icon.ContextMenu = new ContextMenu(
+                    new[]
+                    {
+                        new MenuItem("Exit", (s, e) =>
+                        {
+                            form.Close();
+                            Application.Exit();
+                        }),
+                    });
+                icon.Visible = true;
+
+                Application.Run(form);
+                icon.Visible = false;
+            }
         }
     }
 }
