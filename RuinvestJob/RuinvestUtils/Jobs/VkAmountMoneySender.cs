@@ -12,14 +12,10 @@ namespace RuinvestUtils.Jobs
 {
     public class VkAmountMoneySender : IJob
     {
-        private readonly Logger logger = LogManager.GetCurrentClassLogger();
-
         public async Task Execute(IJobExecutionContext context)
         {
             try
             {
-                logger.Info("Start VkAmountMoneySender");
-
                 var yesterday = DateTime.Now.AddDays(-1);
                 var moneyOutOrders = DataWrapper.GetMoneyOrdersByDate(yesterday);
                 var sumYandex = moneyOutOrders.Where(p => p.TypePurce == MoneyOutEnum.Yandex).Sum(p => p.Amount);
@@ -28,12 +24,9 @@ namespace RuinvestUtils.Jobs
 
                 var vk = VKLogic.GetInstance();
                 vk.SendMessage(message);
-
-                logger.Info("End VkAmountMoneySender");
             }
             catch (Exception ex)
             {
-                logger.Error("Error VkAmountMoneySender", ex);
             }
         }
     }

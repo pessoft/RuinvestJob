@@ -13,14 +13,11 @@ namespace RuinvestUtils.Jobs
 {
     public class QiwiSenderMoney : IJob
     {
-        private readonly Logger logger = LogManager.GetCurrentClassLogger();
-
         public async Task Execute(IJobExecutionContext context)
         {
+            
             try
             {
-                logger.Info("Start QiwiSenderMoney");
-
                 var vk = VKLogic.GetInstance();
                 vk.SendMessage($"QiwiSenderMoney Start<br>Date: {DateTime.Now.ToString()}");
                 var yesterday = DateTime.Now.AddDays(-1);
@@ -30,7 +27,7 @@ namespace RuinvestUtils.Jobs
                 var qiwi = new QiwiWallet();
                 var balance = qiwi.GetBalance();
                 vk.SendMessage($"QiwiSenderMoney Balance: {balance}<br>Amount sum: {moneyOutOrders.Sum(p => p.Amount)} ");
-
+                
                 if (moneyOutOrders != null && moneyOutOrders.Any())
                 {
                     foreach (var order in moneyOutOrders)
@@ -54,14 +51,11 @@ namespace RuinvestUtils.Jobs
                         balance = qiwi.GetBalance();
                     }
                 }
-
+               
                 vk.SendMessage($"QiwiSenderMoney End<br>Date: {DateTime.Now.ToString()}<br>Balance: {qiwi.GetBalance()}");
-
-                logger.Info("End QiwiSenderMoney");
             }
             catch (Exception ex)
             {
-                logger.Error("Error QiwiSenderMoney", ex);
             }
         }
 

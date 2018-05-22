@@ -1,0 +1,52 @@
+2018-05-22 21:02:56.8320 INFO Default Quartz.NET properties loaded from embedded resource file
+2018-05-22 21:02:56.9771 DEBUG TaskSchedulingThreadPool configured with max concurrency of 10 and TaskScheduler ThreadPoolTaskScheduler.
+2018-05-22 21:02:57.2082 INFO Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2018-05-22 21:02:57.2082 INFO Quartz Scheduler v.3.0.4.0 created.
+2018-05-22 21:02:57.2222 INFO RAMJobStore initialized.
+2018-05-22 21:02:57.2222 INFO Scheduler meta-data: Quartz Scheduler (v3.0.4.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-05-22 21:02:57.2222 INFO Quartz scheduler 'DefaultQuartzScheduler' initialized
+2018-05-22 21:02:57.2222 INFO Quartz scheduler version: 3.0.4.0
+2018-05-22 21:02:57.3203 INFO Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2018-05-22 21:02:57.3203 DEBUG Batch acquisition of 0 triggers
+2018-05-22 21:02:57.5515 DEBUG Batch acquisition of 0 triggers
+2018-05-22 21:02:57.5515 INFO Default Quartz.NET properties loaded from embedded resource file
+2018-05-22 21:02:57.5515 DEBUG Batch acquisition of 0 triggers
+2018-05-22 21:02:57.5515 INFO Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2018-05-22 21:02:57.5515 DEBUG Batch acquisition of 1 triggers
+2018-05-22 21:02:57.5885 DEBUG Producing instance of Job 'DEFAULT.552687da-dab2-4ddb-bda3-57c792ce5424', class=RuinvestUtils.Jobs.QiwiSenderMoney
+2018-05-22 21:02:57.6195 DEBUG Batch acquisition of 0 triggers
+2018-05-22 21:02:57.7286 DEBUG Calling Execute on job DEFAULT.552687da-dab2-4ddb-bda3-57c792ce5424
+2018-05-22 21:02:58.0708 INFO Start QiwiSenderMoney
+2018-05-22 21:07:45.4810 INFO Default Quartz.NET properties loaded from embedded resource file
+2018-05-22 21:07:45.5921 DEBUG TaskSchedulingThreadPool configured with max concurrency of 10 and TaskScheduler ThreadPoolTaskScheduler.
+2018-05-22 21:07:45.7032 INFO Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2018-05-22 21:07:45.7192 INFO Quartz Scheduler v.3.0.4.0 created.
+2018-05-22 21:07:45.7242 INFO RAMJobStore initialized.
+2018-05-22 21:07:45.7462 INFO Scheduler meta-data: Quartz Scheduler (v3.0.4.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-05-22 21:07:45.7462 INFO Quartz scheduler 'DefaultQuartzScheduler' initialized
+2018-05-22 21:07:45.7462 INFO Quartz scheduler version: 3.0.4.0
+2018-05-22 21:07:45.7902 INFO Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2018-05-22 21:07:45.7902 DEBUG Batch acquisition of 0 triggers
+2018-05-22 21:07:45.9203 DEBUG Batch acquisition of 0 triggers
+2018-05-22 21:07:45.9203 INFO Default Quartz.NET properties loaded from embedded resource file
+2018-05-22 21:07:45.9253 INFO Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2018-05-22 21:07:45.9253 DEBUG Batch acquisition of 0 triggers
+2018-05-22 21:07:45.9443 DEBUG Batch acquisition of 1 triggers
+2018-05-22 21:07:45.9604 DEBUG Producing instance of Job 'DEFAULT.7e69c9fc-996e-4d96-9986-32d954987a53', class=RuinvestUtils.Jobs.QiwiSenderMoney
+2018-05-22 21:07:45.9794 DEBUG Batch acquisition of 0 triggers
+2018-05-22 21:07:46.0214 DEBUG Calling Execute on job DEFAULT.7e69c9fc-996e-4d96-9986-32d954987a53
+2018-05-22 21:07:46.4327 INFO Start QiwiSenderMoney

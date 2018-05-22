@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="RuinvestJob.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="RuinvestJob.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="RuinvestJob" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -169,7 +169,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jFKLu5P7XnoIcXqk2elgLmSFT08iThA54xHUcH3k/7Q=</dsig:DigestValue>
+        <dsig:DigestValue>kKgp6yxiylrfIDIX1taHRGxNC+6brpJIsD9H8bUfbq0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -181,19 +181,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UizdC686o3bZUKfP08oQ6LtjvZ0JLR7zq8TTpzCgk/s=</dsig:DigestValue>
+        <dsig:DigestValue>dsT7sIqD9wY+InW7zyPyaBIyaKJ9AHVZ82cPLKt21uI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RuinvestUtils.dll" size="14848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RuinvestUtils.dll" size="14336">
       <assemblyIdentity name="RuinvestUtils" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2Zq/q1XJ6TfDmLK7NrtNuzTLxvA4EMtaGQcz8PVzH4o=</dsig:DigestValue>
+        <dsig:DigestValue>GdN7JgSshmesoUvhuUdZWwZkK/m+BxWvzXLAmEavpgI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

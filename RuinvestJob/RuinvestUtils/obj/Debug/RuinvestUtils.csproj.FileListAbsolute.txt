@@ -1,3 +1,4 @@
+E:\Dev\RuinvestJob\RuinvestJob\RuinvestUtils\bin\Debug\EntityFramework.xml
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestUtils\bin\Debug\NLog.config
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestUtils\bin\Debug\RuinvestUtils.dll.config
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestUtils\bin\Debug\RuinvestUtils.dll
@@ -36,7 +37,6 @@ E:\Dev\RuinvestJob\RuinvestJob\RuinvestUtils\bin\Debug\SimpleInjector.xml
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestUtils\bin\Debug\System.Net.Http.Extensions.xml
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestUtils\bin\Debug\System.Net.Http.Primitives.xml
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestUtils\bin\Debug\VkNet.xml
-E:\Dev\RuinvestJob\RuinvestJob\RuinvestUtils\bin\Debug\EntityFramework.xml
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestUtils\obj\Debug\RuinvestUtils.csproj.App.config
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestUtils\obj\Debug\RuinvestUtils.csprojResolveAssemblyReference.cache
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestUtils\obj\Debug\RuinvestUtils.csproj.CoreCompileInputs.cache

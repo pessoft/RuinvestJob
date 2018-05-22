@@ -1,10 +1,11 @@
+E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\EntityFramework.dll
+E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\NLog.xml
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\NLog.config
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\RuinvestJob.exe.config
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\RuinvestJob.exe.manifest
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\RuinvestJob.application
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\RuinvestJob.exe
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\RuinvestJob.pdb
-E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\EntityFramework.dll
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\EntityFramework.SqlServer.dll
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\HtmlAgilityPack.dll
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\JetBrains.Annotations.dll
@@ -37,7 +38,6 @@ E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\JetBrains.Annotations.xml
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\Newtonsoft.Json.xml
-E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\NLog.xml
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\SimpleInjector.xml
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\System.Net.Http.Extensions.xml
 E:\Dev\RuinvestJob\RuinvestJob\RuinvestJob\bin\Debug\System.Net.Http.Primitives.xml
