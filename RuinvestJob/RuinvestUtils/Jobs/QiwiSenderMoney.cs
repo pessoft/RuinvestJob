@@ -6,39 +6,61 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Web;
+using RuinvestUtils.VK;
+using NLog;
 
 namespace RuinvestUtils.Jobs
 {
     public class QiwiSenderMoney : IJob
     {
+        private readonly Logger logger = LogManager.GetCurrentClassLogger();
+
         public async Task Execute(IJobExecutionContext context)
         {
-
-            var yesterday = DateTime.Now.AddDays(-1);
-            var moneyOutOrders = DataWrapper.GetMoneyOrdersUpToDate(yesterday)
-                .OrderBy(p => p.OrderDate)
-                .ToList();
-            var qiwi = new QiwiWallet();
-            var balance = qiwi.GetBalance();
-
-
-            if (moneyOutOrders != null && moneyOutOrders.Any())
+            try
             {
-                foreach (var order in moneyOutOrders)
+                logger.Info("Start QiwiSenderMoney");
+
+                var vk = VKLogic.GetInstance();
+                vk.SendMessage($"QiwiSenderMoney Start<br>Date: {DateTime.Now.ToString()}");
+                var yesterday = DateTime.Now.AddDays(-1);
+                var moneyOutOrders = DataWrapper.GetMoneyOrdersUpToDate(yesterday)
+                    .OrderBy(p => p.OrderDate)
+                    .ToList();
+                var qiwi = new QiwiWallet();
+                var balance = qiwi.GetBalance();
+                vk.SendMessage($"QiwiSenderMoney Balance: {balance}<br>Amount sum: {moneyOutOrders.Sum(p => p.Amount)} ");
+
+                if (moneyOutOrders != null && moneyOutOrders.Any())
                 {
-                    if (order.Amount <= balance)
+                    foreach (var order in moneyOutOrders)
                     {
-                        var amounts = BreakIntoShares(order.Amount);
-
-                        foreach (var amount in amounts)
+                        if (order.Amount <= balance)
                         {
-                            qiwi.SendMoney(order.NumberPurce.Replace("+", ""), amount);
-                            Thread.Sleep(30);//что бы не долбиться без остановки на сервер qiwi
-                        }
-                    }
+                            var amounts = BreakIntoShares(order.Amount);
 
-                    balance = qiwi.GetBalance();
+                            foreach (var amount in amounts)
+                            {
+                                var success =  qiwi.SendMoney(order.NumberPurce.Replace("+", ""), amount);
+                                if (success)
+                                {
+                                    order.Amount -= amount;
+                                }
+                                Thread.Sleep(30);//что бы не долбиться без остановки на сервер qiwi
+                            }
+                        }
+
+                        balance = qiwi.GetBalance();
+                    }
                 }
+
+                vk.SendMessage($"QiwiSenderMoney End<br>Date: {DateTime.Now.ToString()}<br>Balance: {qiwi.GetBalance()}");
+
+                logger.Info("End QiwiSenderMoney");
+            }
+            catch (Exception ex)
+            {
+                logger.Error("Error QiwiSenderMoney", ex);
             }
         }
 

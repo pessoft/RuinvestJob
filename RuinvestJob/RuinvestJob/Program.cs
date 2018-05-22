@@ -1,6 +1,7 @@
 ﻿using RuinvestUtils.Jobs;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,6 +17,15 @@ namespace RuinvestJob
         [STAThread]
         static void Main()
         {
+            var currentProcess = Process.GetCurrentProcess();
+            var proceses = Process.GetProcessesByName(currentProcess.ProcessName);
+
+            if (proceses != null && proceses.Length > 1)
+            {
+                Application.Exit();
+                return;
+            }
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
@@ -25,7 +35,7 @@ namespace RuinvestJob
             var form = new RuinvestJob();
             using (NotifyIcon icon = new NotifyIcon())
             {
-                icon.Icon = Icon.ExtractAssociatedIcon("title-ico.ico");
+                icon.Icon = form.Icon;
                 icon.ContextMenu = new ContextMenu(
                     new[]
                     {
