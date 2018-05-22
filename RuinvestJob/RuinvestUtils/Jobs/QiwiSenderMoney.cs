@@ -45,8 +45,9 @@ namespace RuinvestUtils.Jobs
                                 if (success)
                                 {
                                     order.Amount -= amount;
+                                    DataWrapper.UpdateOrderMoneyOutFinished(new List<RuinvestLogic.Models.OrderMoneyOut> { order });
                                 }
-                                Thread.Sleep(30);//что бы не долбиться без остановки на сервер qiwi
+                                Thread.Sleep(50);//что бы не долбиться без остановки на сервер qiwi
                             }
                         }
 
