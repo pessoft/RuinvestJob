@@ -31,6 +31,7 @@ namespace RuinvestJob
 
             VkAmountMoneyScheduler.Start();
             QiwiSenderMoneyScheduler.Start();
+            DepositUpdaterScheduler.Start();
 
             var form = new RuinvestJob();
             using (NotifyIcon icon = new NotifyIcon())

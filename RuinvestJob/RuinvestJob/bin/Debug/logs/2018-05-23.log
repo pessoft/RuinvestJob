@@ -1,0 +1,55 @@
+2018-05-23 22:55:34.9469 INFO Default Quartz.NET properties loaded from embedded resource file
+2018-05-23 22:55:35.1280 DEBUG TaskSchedulingThreadPool configured with max concurrency of 10 and TaskScheduler ThreadPoolTaskScheduler.
+2018-05-23 22:55:35.2501 INFO Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2018-05-23 22:55:35.2611 INFO Quartz Scheduler v.3.0.4.0 created.
+2018-05-23 22:55:35.2611 INFO RAMJobStore initialized.
+2018-05-23 22:55:35.2781 INFO Scheduler meta-data: Quartz Scheduler (v3.0.4.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-05-23 22:55:35.2781 INFO Quartz scheduler 'DefaultQuartzScheduler' initialized
+2018-05-23 22:55:35.2781 INFO Quartz scheduler version: 3.0.4.0
+2018-05-23 22:55:35.2961 INFO Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2018-05-23 22:55:35.3031 DEBUG Batch acquisition of 0 triggers
+2018-05-23 22:55:35.4162 DEBUG Batch acquisition of 0 triggers
+2018-05-23 22:55:35.4262 INFO Default Quartz.NET properties loaded from embedded resource file
+2018-05-23 22:55:35.4262 DEBUG Batch acquisition of 0 triggers
+2018-05-23 22:55:35.4262 INFO Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2018-05-23 22:55:35.4262 DEBUG Batch acquisition of 1 triggers
+2018-05-23 22:55:35.4532 DEBUG Producing instance of Job 'DEFAULT.1ef14ad1-0378-4113-939c-053552b87abe', class=RuinvestUtils.Jobs.QiwiSenderMoney
+2018-05-23 22:55:35.4752 DEBUG Batch acquisition of 0 triggers
+2018-05-23 22:55:35.5023 DEBUG Calling Execute on job DEFAULT.1ef14ad1-0378-4113-939c-053552b87abe
+2018-05-23 22:57:45.9089 INFO Default Quartz.NET properties loaded from embedded resource file
+2018-05-23 22:57:46.1131 DEBUG TaskSchedulingThreadPool configured with max concurrency of 10 and TaskScheduler ThreadPoolTaskScheduler.
+2018-05-23 22:57:46.4183 INFO Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2018-05-23 22:57:46.4303 INFO Quartz Scheduler v.3.0.4.0 created.
+2018-05-23 22:57:46.4303 INFO RAMJobStore initialized.
+2018-05-23 22:57:46.4303 INFO Scheduler meta-data: Quartz Scheduler (v3.0.4.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-05-23 22:57:46.4393 INFO Quartz scheduler 'DefaultQuartzScheduler' initialized
+2018-05-23 22:57:46.4393 INFO Quartz scheduler version: 3.0.4.0
+2018-05-23 22:57:46.4613 INFO Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2018-05-23 22:57:46.4613 DEBUG Batch acquisition of 0 triggers
+2018-05-23 22:57:46.5644 DEBUG Batch acquisition of 0 triggers
+2018-05-23 22:57:46.5644 INFO Default Quartz.NET properties loaded from embedded resource file
+2018-05-23 22:57:46.5644 INFO Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2018-05-23 22:57:46.5644 DEBUG Batch acquisition of 0 triggers
+2018-05-23 22:57:46.5644 DEBUG Batch acquisition of 1 triggers
+2018-05-23 22:57:46.5644 INFO Default Quartz.NET properties loaded from embedded resource file
+2018-05-23 22:57:46.5644 INFO Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2018-05-23 22:57:46.5934 DEBUG Producing instance of Job 'DEFAULT.f8c38300-2c77-4288-bb9b-93f484f3a29b', class=RuinvestUtils.Jobs.QiwiSenderMoney
+2018-05-23 22:57:46.6204 DEBUG Batch acquisition of 1 triggers
+2018-05-23 22:57:46.6204 DEBUG Producing instance of Job 'DEFAULT.1487465e-bd27-47b9-8978-554c9407d33c', class=RuinvestUtils.Jobs.DepositUpdater
+2018-05-23 22:57:46.6204 DEBUG Batch acquisition of 0 triggers
+2018-05-23 22:57:46.7075 DEBUG Calling Execute on job DEFAULT.f8c38300-2c77-4288-bb9b-93f484f3a29b
+2018-05-23 22:57:46.7075 DEBUG Calling Execute on job DEFAULT.1487465e-bd27-47b9-8978-554c9407d33c

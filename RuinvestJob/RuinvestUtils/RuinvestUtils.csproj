@@ -94,6 +94,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Jobs\DepositUpdater.cs" />
+    <Compile Include="Jobs\DepositUpdaterScheduler.cs" />
     <Compile Include="Jobs\QiwiSenderMoney.cs" />
     <Compile Include="Jobs\QiwiSenderMoneyScheduler.cs" />
     <Compile Include="Jobs\VkAmountMOneyScheduler.cs" />
