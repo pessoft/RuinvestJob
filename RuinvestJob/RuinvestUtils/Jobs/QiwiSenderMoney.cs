@@ -1,13 +1,13 @@
 ﻿using Quartz;
 using RuinvestLogic.Logic;
+using RuinvestLogic.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
-using System.Web;
 using RuinvestUtils.VK;
-using NLog;
+
 
 namespace RuinvestUtils.Jobs
 {
@@ -15,7 +15,7 @@ namespace RuinvestUtils.Jobs
     {
         public async Task Execute(IJobExecutionContext context)
         {
-            
+
             try
             {
                 var vk = VKLogic.GetInstance();
@@ -27,36 +27,43 @@ namespace RuinvestUtils.Jobs
                 var qiwi = new QiwiWallet();
                 var balance = qiwi.GetBalance();
                 vk.SendMessage($"QiwiSenderMoney Balance: {balance}<br>Amount sum: {moneyOutOrders.Sum(p => p.Amount)} ");
-                
+
                 if (moneyOutOrders != null && moneyOutOrders.Any())
                 {
                     foreach (var order in moneyOutOrders)
                     {
-                        if (order.Amount <= balance)
+                        if ((order.Amount - order.AmountOut > 0) 
+                            && (order.Amount - order.AmountOut <= balance))
                         {
-                            var amounts = BreakIntoShares(order.Amount);
+                            var amounts = BreakIntoShares(order.Amount - order.AmountOut);
 
                             foreach (var amount in amounts)
                             {
-                                var success =  qiwi.SendMoney(order.NumberPurce.Replace("+", ""), amount);
+                                var success = qiwi.SendMoney(order.NumberPurce.Replace("+", ""), amount);
                                 if (success)
                                 {
-                                    order.Amount -= amount;
-                                    DataWrapper.UpdateOrderMoneyOutFinished(new List<RuinvestLogic.Models.OrderMoneyOut> { order });
+                                    order.AmountOut += amount;
+                                    var upData = new List<OrderMoneyOut> { order };
+                                    DataWrapper.UpdateOrderMoneyOutFinished(upData);
                                 }
-                                Thread.Sleep(50);//что бы не долбиться без остановки на сервер qiwi
+                                //что бы не долбиться без остановки на сервер qiwi
+                                Thread.Sleep(50);
                             }
+                        }
+
+                        if (order.AmountOut >= order.Amount)
+                        {
+                            DataWrapper.MarkOrderMoneyOutFinished(order.OrderId);
                         }
 
                         balance = qiwi.GetBalance();
                     }
                 }
-               
+
                 vk.SendMessage($"QiwiSenderMoney End<br>Date: {DateTime.Now.ToString()}<br>Balance: {qiwi.GetBalance()}");
             }
             catch (Exception ex)
-            {
-            }
+            { }
         }
 
         private List<double> BreakIntoShares(double amount)
