@@ -28,6 +28,12 @@ namespace RuinvestUtils.Jobs
                 if (markFinishedIds != null && markFinishedIds.Any())
                 {
                     DataWrapper.MarkDepositFinished(markFinishedIds);
+                    deposits = deposits.Where(p => markFinishedIds.Contains(p.Id)).ToList();
+
+                    foreach (var deposit in deposits)
+                    {
+                        DataWrapper.AddMoneyByUserId(deposit.UserId, deposit.EndAmount);
+                    }
                 }
             }
             catch (Exception ex)

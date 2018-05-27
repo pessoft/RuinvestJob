@@ -20,7 +20,11 @@ namespace RuinvestUtils.VK
 
         public static VKLogic GetInstance()
         {
-            instance = instance ?? new VKLogic();
+            //instance = instance ?? new VKLogic();
+            if (instance == null)
+            {
+                instance =  new VKLogic();
+            }
 
             return instance;
         }
@@ -44,11 +48,16 @@ namespace RuinvestUtils.VK
 
         public void SendMessage(string message)
         {
-            var send = vk.Messages.Send(new MessagesSendParams
+            try
             {
-                UserId = 151438995,
-                Message = message
-            });
+                var send = vk.Messages.Send(new MessagesSendParams
+                {
+                    UserId = 151438995,
+                    Message = message
+                });
+            }
+            catch (Exception ex)
+            { }
         }
 
     }
