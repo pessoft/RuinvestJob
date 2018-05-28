@@ -20,8 +20,8 @@ namespace RuinvestUtils.Jobs
             {
                 var vk = VKLogic.GetInstance();
                 vk.SendMessage($"QiwiSenderMoney Start<br>Date: {DateTime.Now.ToString()}");
-                var yesterday = DateTime.Now.AddDays(-1);
-                var moneyOutOrders = DataWrapper.GetMoneyOrdersUpToDate(yesterday)
+                var date = DateTime.Now;
+                var moneyOutOrders = DataWrapper.GetMoneyOrdersUpToDate(date)
                     .OrderBy(p => p.OrderDate)
                     .ToList();
                 var qiwi = new QiwiWallet();

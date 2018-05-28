@@ -210,3 +210,35 @@ RuinvestJob/RuinvestUtils/bin/Debug/System.Security.Cryptography.Primitives.dll
 RuinvestJob/RuinvestUtils/bin/Debug/System.Security.Cryptography.X509Certificates.dll
 RuinvestJob/RuinvestUtils/bin/Debug/VkNet.dll
 RuinvestJob/RuinvestUtils/bin/Debug/VkNet.xml
+RuinvestJob/packages/VkNet.1.34.0/lib/net40/VkNet.dll
+RuinvestJob/packages/VkNet.1.34.0/lib/net40/VkNet.xml
+RuinvestJob/packages/VkNet.1.34.0/lib/net45/VkNet.dll
+RuinvestJob/packages/VkNet.1.34.0/lib/net45/VkNet.xml
+RuinvestJob/packages/VkNet.1.34.0/lib/netstandard2.0/VkNet.dll
+RuinvestJob/packages/VkNet.1.34.0/lib/netstandard2.0/VkNet.xml
+RuinvestJob/packages/VkNet.1.34.0/VkNet.1.34.0.nupkg
+RuinvestJob/RuinvestJob/bin/Debug/logs/log_2018-05-28.log
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/EntityFramework.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/EntityFramework.SqlServer.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/HtmlAgilityPack.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/JetBrains.Annotations.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/Microsoft.Extensions.DependencyInjection.Abstractions.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/Microsoft.Extensions.DependencyInjection.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/Newtonsoft.Json.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/NLog.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/QiwiApi.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/Quartz.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/RuinvestJob.exe.config.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/RuinvestJob.exe.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/RuinvestJob.exe.manifest
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/RuinvestLogic.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/RuinvestUtils.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/SimpleInjector.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/System.Net.Http.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/System.Net.Http.Extensions.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/System.Net.Http.Primitives.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/System.Security.Cryptography.Algorithms.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/System.Security.Cryptography.Encoding.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/System.Security.Cryptography.Primitives.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/System.Security.Cryptography.X509Certificates.dll.deploy
+RuinvestJob/RuinvestJob/bin/Release/app.publish/Application Files/RuinvestJob_1_0_0_8/VkNet.dll.deploy
